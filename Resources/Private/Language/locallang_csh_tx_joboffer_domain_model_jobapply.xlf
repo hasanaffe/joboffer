@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="EXT:joboffer/Resources/Private/Language/locallang_csh" date="2021-03-23T11:38:15Z" product-name="joboffer">
+		<header/>
+		<body>
+			<trans-unit id="job_title.description" resname="job_title.description">
+				<source>jobTitle</source>
+			</trans-unit>
+			<trans-unit id="salutation.description" resname="salutation.description">
+				<source>salutation</source>
+			</trans-unit>
+			<trans-unit id="first_name.description" resname="first_name.description">
+				<source>firstName</source>
+			</trans-unit>
+			<trans-unit id="last_name.description" resname="last_name.description">
+				<source>lastName</source>
+			</trans-unit>
+			<trans-unit id="zip_code.description" resname="zip_code.description">
+				<source>zipCode</source>
+			</trans-unit>
+			<trans-unit id="city.description" resname="city.description">
+				<source>city</source>
+			</trans-unit>
+			<trans-unit id="curriculum_vitae.description" resname="curriculum_vitae.description">
+				<source>curriculumVitae</source>
+			</trans-unit>
+			<trans-unit id="image.description" resname="image.description">
+				<source>image</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

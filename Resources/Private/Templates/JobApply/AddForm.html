@@ -1,0 +1,58 @@
+<html
+  xmlns:joboffer="http://typo3.org/ns/AyhanKoyun/Joboffer/ViewHelpers"
+  data-namespace-typo3-fluid="true">
+<f:layout name="default"/>
+<f:section name="content">
+    <f:debug inline="true">{_all}</f:debug>
+    <div class="container">
+        <h1>Apply to job</h1>
+        <f:render partial="Error" arguments="{object: jobApply}" />
+        <f:form action="add" enctype="multipart/form-data" object="{jobApply}" name="jobApply" arguments="{jobOffer: jobOffer, jobApply: jobApply}"
+                additionalAttributes="{role: 'form'}">
+            <div class="form-group">
+                <label>Job title</label>
+                <f:form.textfield property="jobTitle" class="form-control" value="{jobOffer.jobTitle}" />
+            </div>
+            <div class="form-group">
+                <label>Anrede</label>
+                <f:form.select property="salutation" class="form-control">
+                    <f:form.select.option value="0">Herr</f:form.select.option>
+                    <f:form.select.option value="1">Frau</f:form.select.option>
+                </f:form.select>
+            </div>
+            <div class="form-group">
+                <label>Vorname</label>
+                <f:form.textfield property="firstName" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label>Nachname</label>
+                <f:form.textfield property="lastName" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label>PLZ</label>
+                <f:form.textfield property="zipCode" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label>Stadt</label>
+                <f:form.textfield property="city" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label>Lebenslauf</label>
+                <div class="file-upload">
+                <joboffer:form.upload property="curriculumVitae">
+                    <f:image image="{jobApply}" class="form-control-file" />
+                </joboffer:form.upload>
+            </div>
+            </div>
+            <div class="form-group">
+                <label>Foto</label>
+                <div class="file-upload">
+                <joboffer:form.upload property="image">
+                    <f:image image="{resource}" class="form-control-file" />
+                </joboffer:form.upload>
+            </div>
+            </div>
+            <f:form.submit value="Apply" class="btn btn-primary btn-sm" />
+        </f:form>
+    </div>
+</f:section>

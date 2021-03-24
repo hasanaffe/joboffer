@@ -1,0 +1,28 @@
+{
+    "name": "ayhankoyun/joboffer",
+    "type": "typo3-cms-extension",
+    "description": "",
+    "authors": [
+        {
+            "name": "Ayhan Koyun",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "typo3/cms-core": "^10.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "AyhanKoyun\\Joboffer\\": "Classes"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "AyhanKoyun\\Joboffer\\Tests\\": "Tests"
+        }
+    },
+    "replace": {
+        "ayhankoyun/joboffer": "self.version",
+        "typo3-ter/joboffer": "self.version"
+    }
+}

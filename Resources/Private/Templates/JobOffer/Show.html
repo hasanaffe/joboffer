@@ -1,0 +1,19 @@
+<f:layout name="Default" />
+<f:section name="content">
+  <f:debug inline="true">{_all}</f:debug>
+    <div class="container">
+        <h1>View job offer details</h1>
+        <f:flashMessages/>
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">{jobOffer.jobTitle}</h5>
+            <p class="card-text"><f:format.nl2br>{jobOffer.jobDescription}</f:format.nl2br></p>
+          </div>
+        </div>
+        <f:link.action action="list" class="btn btn-primary btn-sm"><i class="bi bi-arrow-left"></i>Back to list</f:link.action>
+        <f:link.action action="addForm" controller="JobApply" arguments="{jobOffer : jobOffer}"
+                       class="btn btn-primary btn-sm"><i class="bi bi-person-check-fill"></i>
+            Apply
+        </f:link.action>
+    </div>
+</f:section>

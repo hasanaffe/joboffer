@@ -1,0 +1,15 @@
+
+plugin.tx_joboffer_joboffer {
+    view {
+        # cat=plugin.tx_joboffer_joboffer/file; type=string; label=Path to template root (FE)
+        templateRootPath = EXT:joboffer/Resources/Private/Templates/
+        # cat=plugin.tx_joboffer_joboffer/file; type=string; label=Path to template partials (FE)
+        partialRootPath = EXT:joboffer/Resources/Private/Partials/
+        # cat=plugin.tx_joboffer_joboffer/file; type=string; label=Path to template layouts (FE)
+        layoutRootPath = EXT:joboffer/Resources/Private/Layouts/
+    }
+    persistence {
+        # cat=plugin.tx_joboffer_joboffer//a; type=string; label=Default storage PID
+        storagePid =
+    }
+}

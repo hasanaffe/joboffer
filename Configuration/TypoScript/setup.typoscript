@@ -1,0 +1,57 @@
+
+plugin.tx_joboffer_joboffer {
+    view {
+        templateRootPaths.0 = EXT:joboffer/Resources/Private/Templates/
+        templateRootPaths.1 = {$plugin.tx_joboffer_joboffer.view.templateRootPath}
+        partialRootPaths.0 = EXT:joboffer/Resources/Private/Partials/
+        partialRootPaths.1 = {$plugin.tx_joboffer_joboffer.view.partialRootPath}
+        layoutRootPaths.0 = EXT:joboffer/Resources/Private/Layouts/
+        layoutRootPaths.1 = {$plugin.tx_joboffer_joboffer.view.layoutRootPath}
+    }
+    persistence {
+        storagePid = 3
+        recursive = 1
+        classes {
+          AyhanKoyun\Joboffer\Domain\Model\JobOffer {
+            newRecordStoragePid = 4
+          }
+          AyhanKoyun\Joboffer\Domain\Model\JobApply {
+            newRecordStoragePid = 5
+          }
+          AyhanKoyun\Joboffer\Domain\Model\FileReference {
+            mapping {
+                tableName = sys_file_reference
+                columns {
+                    uid_local.mapOnProperty = oroginalFieldIdentifier
+                }
+            }
+          }
+          AyhanKoyun\Joboffer\Domain\Model\Author {
+            mapping {
+              tableName = job_title
+              columns {
+                name.mapOnProperty = jobTitle
+              }
+            }
+          }
+        }
+    }
+    features {
+        #skipDefaultArguments = 1
+        # if set to 1, the enable fields are ignored in BE context
+        ignoreAllEnableFieldsInBe = 0
+        # Should be on by default, but can be disabled if all action in the plugin are uncached
+        requireCHashArgumentForActionArguments = 1
+    }
+    mvc {
+        #callDefaultActionIfActionCantBeResolved = 1
+    }
+}
+
+page.includeCSS {
+    bootstrap = https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css
+    bootstrapIcons = https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css
+    joboffer = EXT:joboffer/Resources/Public/Css/tx_joboffer.css
+}
+
+plugin.tx_joboffer.features.rewrittenPropertyMapper = 0

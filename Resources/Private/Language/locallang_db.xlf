@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="EXT:joboffer/Resources/Private/Language/locallang_db" date="2021-03-23T11:38:15Z" product-name="joboffer">
+		<header/>
+		<body>
+			<trans-unit id="tx_joboffer_domain_model_joboffer" resname="tx_joboffer_domain_model_joboffer">
+				<source>Job Offer</source>
+			</trans-unit>
+			<trans-unit id="tx_joboffer_domain_model_joboffer.job_title" resname="tx_joboffer_domain_model_joboffer.job_title">
+				<source>Job Title</source>
+			</trans-unit>
+			<trans-unit id="tx_joboffer_domain_model_joboffer.job_description" resname="tx_joboffer_domain_model_joboffer.job_description">
+				<source>Job Description</source>
+			</trans-unit>
+			<trans-unit id="tx_joboffer_domain_model_joboffer.jobapplies" resname="tx_joboffer_domain_model_joboffer.jobapplies">
+				<source>Jobapplies</source>
+			</trans-unit>
+			<trans-unit id="tx_joboffer_domain_model_jobapply" resname="tx_joboffer_domain_model_jobapply">
+				<source>Job Apply</source>
+			</trans-unit>
+			<trans-unit id="tx_joboffer_domain_model_jobapply.job_title" resname="tx_joboffer_domain_model_jobapply.job_title">
+				<source>Job Title</source>
+			</trans-unit>
+			<trans-unit id="tx_joboffer_domain_model_jobapply.salutation" resname="tx_joboffer_domain_model_jobapply.salutation">
+				<source>Salutation</source>
+			</trans-unit>
+			<trans-unit id="tx_joboffer_domain_model_jobapply.first_name" resname="tx_joboffer_domain_model_jobapply.first_name">
+				<source>First Name</source>
+			</trans-unit>
+			<trans-unit id="tx_joboffer_domain_model_jobapply.last_name" resname="tx_joboffer_domain_model_jobapply.last_name">
+				<source>Last Name</source>
+			</trans-unit>
+			<trans-unit id="tx_joboffer_domain_model_jobapply.zip_code" resname="tx_joboffer_domain_model_jobapply.zip_code">
+				<source>Zip Code</source>
+			</trans-unit>
+			<trans-unit id="tx_joboffer_domain_model_jobapply.city" resname="tx_joboffer_domain_model_jobapply.city">
+				<source>City</source>
+			</trans-unit>
+			<trans-unit id="tx_joboffer_domain_model_jobapply.curriculum_vitae" resname="tx_joboffer_domain_model_jobapply.curriculum_vitae">
+				<source>Curriculum Vitae</source>
+			</trans-unit>
+			<trans-unit id="tx_joboffer_domain_model_jobapply.image" resname="tx_joboffer_domain_model_jobapply.image">
+				<source>Image</source>
+			</trans-unit>
+			<trans-unit id="tx_joboffer_joboffer.name" resname="tx_joboffer_joboffer.name">
+				<source>Joboffer</source>
+			</trans-unit>
+			<trans-unit id="tx_joboffer_joboffer.description" resname="tx_joboffer_joboffer.description">
+				<source>An Extension for job offer and simple reply</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

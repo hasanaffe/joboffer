@@ -1,0 +1,9 @@
+<f:form.validationResults for="{field}">
+    <f:for each="{validationResults.flattenedErrors}" key="propertyPath" as="propertyErrors">
+        <f:for each="{propertyErrors}" as="propertyError">
+            <div class="alert alert-danger">
+                <f:translate key="validator.{propertyPath}.{propertyError.code}" default="{propertyError}" />
+            </div>
+        </f:for>
+    </f:for>
+</f:form.validationResults>
